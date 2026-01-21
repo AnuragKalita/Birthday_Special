@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@300&family=Handlee&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@300&display=swap');
 
 body {
     margin: 0;
@@ -107,7 +106,7 @@ button:hover {
     animation-delay: 3s;
 }
 
-.delay2 {
+.glow-delay2 {
     left: 75%;
     animation-delay: 6s;
 }
@@ -215,4 +214,5 @@ button:hover {
 /* Extra delay */
 .delay3 {
     animation-delay: 1.5s;
+
 }
