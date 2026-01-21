@@ -13,7 +13,7 @@ const images = [
     },
     {
         src: "images/memory4.jpeg",
-        text: "Beautiful, Pure, Untainted."
+        text: "Beautiful, Pure, Untainted Angel."
     },
     {
         src: "images/memory5.jpeg",
@@ -21,7 +21,7 @@ const images = [
     },
     {
         src: "images/memory6.jpeg",
-        text: "How did i met you, i'm in shock."
+        text: "How did I meet you? I’m still in shock."
     }
 ];
 
@@ -41,6 +41,7 @@ function openModal(index) {
     current = index;
     document.getElementById("modal").style.display = "flex";
     showImage();
+    startSlideshow();
 }
 
 function closeModal() {
@@ -55,6 +56,7 @@ function showImage() {
 
 /* Auto Slideshow */
 function startSlideshow() {
+    clearInterval(slideshowInterval);
     slideshowInterval = setInterval(() => {
         current = (current + 1) % images.length;
         if (document.getElementById("modal").style.display === "flex") {
@@ -62,3 +64,4 @@ function startSlideshow() {
         }
     }, 3000); // soft timing
 }
+
