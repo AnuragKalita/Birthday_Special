@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Background Music -->
+    <audio id="bgMusic" loop>
+        <source src="music/BgMusic.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Floating lights -->
+    <div class="glow"></div>
+    <div class="glow delay1"></div>
+    <div class="glow delay2"></div>
+
+    <div class="card">
+        <h1 class="fade">Happy Birthday</h1>
+        <h2 class="fade delay">To Someone Truly Special</h2>
+
+        <p class="fade delay2">
+            Some moments stay with us forever.
+            Here are a few I’ll always smile at.
+        </p>
+
+        <!-- Photo Memories -->
+        <div class="gallery fade delay3">
+            <div class="photo" onclick="openModal(0)">
+                <img src="images/memory1.jpeg">
+                <span>That quiet smile</span>
+                <small>“You didn’t know I took this, but I loved this moment.”</small>
+            </div>
+
+            <div class="photo" onclick="openModal(1)">
+                <img src="images/memory2.jpeg">
+                <span>A simple day</span>
+                <small>“Nothing special — yet it became special because of you.”</small>
+            </div>
+
+            <div class="photo" onclick="openModal(2)">
+                <img src="images/memory3.jpeg">
+                <span>Forever favorite</span>
+                <small>“One of those memories I never want to lose.”</small>
+            </div>
+            <div class="photo" onclick="openModal(3)">
+                <img src="images/memory4.jpeg">
+                <span>You look like an angel</span>
+                <small>“Beautiful, Pure, Untainted.”</small>
+            </div>
+            <div class="photo" onclick="openModal(4)">
+                <img src="images/memory5.jpeg">
+                <span>Keep Smiling 😁</span>
+                <small>“My pretty bestie 🎀”</small>
+            </div>
+            <div class="photo" onclick="openModal(5)">
+                <img src="images/memory6.jpeg">
+                <span>You're too cute to handle</span>
+                <small>“How did i met you, i'm in shock.”</small>
+            </div>
+        </div>
+        <button onclick="celebrate()">Begin 🎶</button>
+        <p id="message"></p>
+    </div>
+    <div id="modal" class="modal">
+        <span class="close" onclick="closeModal()">×</span>
+        <img id="modalImg">
+        <p id="modalText"></p>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
