@@ -10,7 +10,7 @@
 
 <body>
     <!-- Background Music -->
-    <audio id="bgMusic" loop>
+    <audio id="bgMusic" loop preload="none">
         <source src="music/BgMusic.mp3" type="audio/mpeg">
     </audio>
 
@@ -19,7 +19,7 @@
     <div class="glow delay1"></div>
     <div class="glow delay2"></div>
 
-    <div class="card">
+    <main class="card">
         <h1 class="fade">Happy Birthday</h1>
         <h2 class="fade delay">To Someone Truly Special</h2>
 
@@ -31,7 +31,7 @@
         <!-- Photo Memories -->
         <div class="gallery fade delay3">
             <div class="photo" onclick="openModal(0)">
-                <img src="images/memory1.jpeg">
+                <img src="images/memory1.jpeg" alt="A quiet smiling moment">
                 <span>That quiet smile</span>
                 <small>“You didn’t know I took this, but I loved this moment.”</small>
             </div>
@@ -74,5 +74,6 @@
 
     <script src="js/script.js"></script>
 </body>
+
 
 </html>
